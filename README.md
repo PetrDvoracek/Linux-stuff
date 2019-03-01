@@ -33,6 +33,16 @@ where $Mod stands for super or Alt (depends on the setting).
 
 The changes in config will take effect after `i3 restart`
 
+## Vim
+
+Install vim with extra stuff [1](https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard) [vim-gtk](https://packages.debian.org/jessie/vim-gtk)
+```
+sudo apt-get install vim vim-gtk
+```
+open vim with `vim` and type `:echo has('clipboard')` which should return 1 (if not, vim-gtk install was not successful).
+
+
+
 
 
 
