@@ -1,3 +1,4 @@
+https://app.codility.com/c/feedback/DAGTEK-X2W/
 # Linux-stuff
 some notes about Debian
 
