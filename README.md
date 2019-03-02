@@ -15,6 +15,11 @@ the change will take effect the next time the user logs in.
 
 if you are not be able to resize the screen to the optimal size (`xrandr` gives you only few options). Click *Devices->Insert Guest Addition...* above the screen on running virtual machine and reboot the machine. Now you should have mounted */media/cdrom*, run `sudo sh /media/cdrom/VBoxLinuxAdditions.run`, restart the virtual machine and it should automatically get in shape with your display.
 
+[set timezone](https://jlk.fjfi.cvut.cz/arch/manpages/man/timedatectl.1)
+```
+timedatectl list-timezone
+timedatectl  set-timezone Europe/Prague
+```
 ## [i3 vm](https://i3wm.org/)
 
 install with
