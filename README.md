@@ -55,7 +55,14 @@ and add created ssh to the agent
 ```
 ssh-add ~/.ssh/id_rsa
 ```
-you are ready to [adding the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) (Settings->SSH and GPG keys)
+now [add the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) (Settings->SSH and GPG keys).
+
+Then [add remote](https://help.github.com/en/articles/changing-a-remotes-url#switching-remote-urls-from-https-to-ssh) into repository (must be located in the repo.) and verify
+```
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+git remote -v
+```
+
 
 
 
