@@ -39,6 +39,10 @@ fdisk /dev/sda
 >                   - first sector can be default (2048)
 >           **10G** - choose size of partition
 
+### Partitioning
+The simple scheme is to create 2G for *SWAP* and rest for */*. If yo want to change distributions often create another partition for */home* (so after reinstalation you wont lose any data from home)
+
+
 ## [i3 vm](https://i3wm.org/)
 
 install with
