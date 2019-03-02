@@ -20,6 +20,10 @@ if you are not be able to resize the screen to the optimal size (`xrandr` gives 
 timedatectl list-timezone
 timedatectl  set-timezone Europe/Prague
 ```
+[check if UEFI enabled](https://itsfoss.com/check-uefi-or-bios/), The easiest way to find out if you are running UEFI or BIOS is to look for a folder /sys/firmware/efi. The folder will be missing if your system is using BIOS.
+```
+ls /sys/firmware/efi
+```
 ## [i3 vm](https://i3wm.org/)
 
 install with
