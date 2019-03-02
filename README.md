@@ -42,6 +42,23 @@ sudo apt-get install vim vim-gtk
 ```
 open vim with `vim` and type `:echo has('clipboard')` which should return 1 (if not, vim-gtk install was not successful).
 
+## Git setup and [ssh-agent](https://www.root.cz/man/1/ssh-agent/) 
+The agent s used for authentication when logging in to other machines using [ssh](https://www.root.cz/man/1/ssh/). To automatize process of `git push origin master` [generate ssh keys](https://www.root.cz/man/1/ssh-agent/)
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+start the ssh-agent in the background
+```
+eval "$(ssh-agent -s)"
+```
+and add created ssh to the agent
+```
+ssh-add ~/.ssh/id_rsa
+```
+you are ready to [adding the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) (Settings->SSH and GPG keys)
+
+
+
 
 
 
