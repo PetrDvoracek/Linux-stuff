@@ -1,5 +1,6 @@
+https://app.codility.com/c/feedback/DAGTEK-X2W/
 # Linux-stuff
-some notes about Debian
+some notes about Debian and other Linux stuff. [Debian](https://www.debian.org/social_contract) and [Arch](https://wiki.archlinux.org/index.php/Arch_Linux#Principles) philosophy. 
 
 ## Debian Virtual-box setup
 
@@ -32,6 +33,33 @@ keybinds can be added with `bindsym $Mod+<key> <command> <arguments>`. The most 
 where $Mod stands for super or Alt (depends on the setting).
 
 The changes in config will take effect after `i3 restart`
+
+## Vim
+
+Install vim with extra stuff [1](https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard) [vim-gtk](https://packages.debian.org/jessie/vim-gtk)
+```
+sudo apt-get install vim vim-gtk
+```
+open vim with `vim` and type `:echo has('clipboard')` which should return 1 (if not, vim-gtk install was not successful).
+
+## Git setup and [ssh-agent](https://www.root.cz/man/1/ssh-agent/) 
+The agent s used for authentication when logging in to other machines using [ssh](https://www.root.cz/man/1/ssh/). To automatize process of `git push origin master` [generate ssh keys](https://www.root.cz/man/1/ssh-agent/)
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+start the ssh-agent in the background
+```
+eval "$(ssh-agent -s)"
+```
+and add created ssh to the agent
+```
+ssh-add ~/.ssh/id_rsa
+```
+you are ready to [adding the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) (Settings->SSH and GPG keys)
+
+
+
+
 
 
 
