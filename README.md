@@ -24,6 +24,21 @@ timedatectl  set-timezone Europe/Prague
 ```
 ls /sys/firmware/efi
 ```
+[Create partitions](https://itsfoss.com/install-arch-linux/)
+First type
+```
+fdisk -l
+```
+which should shows mounted disks. Disk */dev/sda* is the main disk and */dev/loop0* could be ignored. To create the partitions type
+```
+fdisk /dev/sda
+```
+>**NOTE:**  **n**   - new partition
+>           **p**   - partition type primary
+>           **1**   - partition number (optional)
+>                   - first sector can be default (2048)
+>           **10G** - choose size of partition
+
 ## [i3 vm](https://i3wm.org/)
 
 install with
