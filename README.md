@@ -1,6 +1,6 @@
 https://app.codility.com/c/feedback/DAGTEK-X2W/
 # Linux-stuff
-some notes about Debian
+some notes about Debian and other Linux stuff. [Debian](https://www.debian.org/social_contract) and [Arch](https://wiki.archlinux.org/index.php/Arch_Linux#Principles) philosophy. 
 
 ## Debian Virtual-box setup
 
