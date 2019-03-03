@@ -44,6 +44,13 @@ fdisk /dev/sda
 ### Partitioning
 The simple scheme is to create 2G for *SWAP* and rest for */*. If yo want to change distributions often create another partition for */home* (so after reinstalation you wont lose any data from home)
 
+### Grub
+```
+systemctl enable dhcpcd
+pacman -S grub os-prober
+grub-install /deb/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 ### Xorg
 
 ```
