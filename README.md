@@ -15,7 +15,7 @@ the change will take effect the next time the user logs in.
 
 if you are not be able to resize the screen to the optimal size (`xrandr` gives you only few options). Click *Devices->Insert Guest Addition...* above the screen on running virtual machine and reboot the machine. Now you should have mounted */media/cdrom*, run `sudo sh /media/cdrom/VBoxLinuxAdditions.run`, restart the virtual machine and it should automatically get in shape with your display.
 ## Arch install notes
-
+[Great](https://medium.com/@sks147/minimal-arch-linux-uefi-installation-with-i3-gaps-cfc507cc8be1)
 ### [set timezone](https://jlk.fjfi.cvut.cz/arch/manpages/man/timedatectl.1)
 ```
 timedatectl list-timezone
@@ -54,6 +54,22 @@ optional: `pacman -S xorg-twm xorg-xclock`
 start xserver
 ```
 startx
+```
+### pacman errors
+[resolv.conf](https://forum.piratebox.cc/read.php?7,21012)
+sudo pacman -Syu
+:: Synchronizing package databases...
+error: failed retrieving file 'core.db' from mirrors.kernel.org : Could not resolve host: mirrors.kernel.org 
+.
+.
+.
+error: failed to update aur (download library error)
+error: failed to synchronize any databases
+error: failed to init transaction (download library error)
+
+```
+sudo rm /etc/resolv.conf
+sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf '
 ```
 
 ## [i3 vm](https://i3wm.org/)
