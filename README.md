@@ -62,6 +62,13 @@ start xserver
 ```
 startx
 ```
+
+### Users
+add user
+```
+useradd -m -g users -s /bin/bash pedro
+```
+> **NOTE**: **-m**    - add home
 ### pacman errors
 [resolv.conf](https://forum.piratebox.cc/read.php?7,21012)
 sudo pacman -Syu
