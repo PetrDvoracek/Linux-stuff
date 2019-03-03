@@ -52,10 +52,9 @@ grub-install /deb/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 ### Xorg
-
+> **!!!xorg-server-utils are now in xorg-apps!!!**
 ```
-pacman -S xorg-server xorg-init virtualbox-guest-utlis
-pacman -S xterm
+pacman -S xorg-server xorg-xinit virtualbox-guest-utlis xorg-apps xorg-twm xorg-xclock xterm
 ```
 optional: `pacman -S xorg-twm xorg-xclock`
 start xserver
@@ -69,7 +68,10 @@ add user
 useradd -m -g users -s /bin/bash pedro
 ```
 > **NOTE**: **-m**    - add home
-### pacman errors
+### pacman
+On 64-bit system uncomment [multilib] in /etc/pacman.conf
+
+
 [resolv.conf](https://forum.piratebox.cc/read.php?7,21012)
 sudo pacman -Syu
 :: Synchronizing package databases...
