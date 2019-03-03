@@ -71,6 +71,12 @@ error: failed to init transaction (download library error)
 sudo rm /etc/resolv.conf
 sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf '
 ```
+### [Chroot](https://wiki.archlinux.org/index.php/Chroot)
+A chroot is an operation that changes the apparent root directory for the current running process and their children. A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree. This modified environment is called a chroot jail. 
+```
+arch-chroot /mnt
+```
+**could be used to set up ssh on raspberry image?**
 
 ## [i3 vm](https://i3wm.org/)
 
