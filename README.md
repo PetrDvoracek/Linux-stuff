@@ -42,7 +42,17 @@ fdisk /dev/sda
 ### Partitioning
 The simple scheme is to create 2G for *SWAP* and rest for */*. If yo want to change distributions often create another partition for */home* (so after reinstalation you wont lose any data from home)
 
+### Xorg
 
+```
+pacman -S xorg-server xorg-init virtualbox-guest-utlis
+pacman -S xterm
+```
+optional: `pacman -S xorg-twm xorg-xclock`
+start xserver
+```
+startx
+```
 ## [i3 vm](https://i3wm.org/)
 
 install with
