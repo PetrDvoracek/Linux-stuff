@@ -14,17 +14,19 @@ exit
 the change will take effect the next time the user logs in.
 
 if you are not be able to resize the screen to the optimal size (`xrandr` gives you only few options). Click *Devices->Insert Guest Addition...* above the screen on running virtual machine and reboot the machine. Now you should have mounted */media/cdrom*, run `sudo sh /media/cdrom/VBoxLinuxAdditions.run`, restart the virtual machine and it should automatically get in shape with your display.
+## Arch install notes
 
-[set timezone](https://jlk.fjfi.cvut.cz/arch/manpages/man/timedatectl.1)
+### [set timezone](https://jlk.fjfi.cvut.cz/arch/manpages/man/timedatectl.1)
 ```
 timedatectl list-timezone
 timedatectl  set-timezone Europe/Prague
 ```
-[check if UEFI enabled](https://itsfoss.com/check-uefi-or-bios/), The easiest way to find out if you are running UEFI or BIOS is to look for a folder /sys/firmware/efi. The folder will be missing if your system is using BIOS.
+### [check if UEFI enabled](https://itsfoss.com/check-uefi-or-bios/)
+The easiest way to find out if you are running UEFI or BIOS is to look for a folder /sys/firmware/efi. The folder will be missing if your system is using BIOS.
 ```
 ls /sys/firmware/efi
 ```
-[Create partitions](https://itsfoss.com/install-arch-linux/)
+### [Create partitions](https://itsfoss.com/install-arch-linux/)
 First type
 ```
 fdisk -l
@@ -53,6 +55,7 @@ start xserver
 ```
 startx
 ```
+
 ## [i3 vm](https://i3wm.org/)
 
 install with
