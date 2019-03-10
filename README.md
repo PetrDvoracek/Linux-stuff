@@ -142,10 +142,11 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 git remote -v
 ```
 
-## Systemd
+## [Systemd](https://www.youtube.com/watch?v=o_AIw9bGogo)
 ### Service
 superset of a daemon, often consist of multiple daemons
 [Rethinking PID 1](http://0pointer.de/blog/projects/systemd.html)
+"It's buggy!" -> "It's software"
 
 
 
