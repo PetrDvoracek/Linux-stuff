@@ -148,7 +148,9 @@ superset of a daemon, often consist of multiple daemons
 [Rethinking PID 1](http://0pointer.de/blog/projects/systemd.html)
 "It's buggy!" -> "It's software"
 
+# Web
 
+[siege tool](https://linux.die.net/man/1/siege)
 
 
 
