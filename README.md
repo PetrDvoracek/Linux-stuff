@@ -152,6 +152,11 @@ superset of a daemon, often consist of multiple daemons
 
 [siege tool](https://linux.die.net/man/1/siege)
 
+# VIM over ssh
+```
+:set t_Co=256
+```
+
 
 
 
