@@ -157,6 +157,27 @@ superset of a daemon, often consist of multiple daemons
 :set t_Co=256
 ```
 
+# [Python compiled from source code](https://realpython.com/installing-python/)
+```
+wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+sudo apt-get update
+sudo apt-get upgrade
+```
+Make sure the system has the tools needed to build Python with 
+```
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev  libncursesw5-dev xz-utils tk-dev
+```
+Build downloaded Python file, -j splits build process into parallel processes
+```
+tar xvf Python-3.6.5.tgz
+cd Python-3.6.5
+./configure --enable-optimizations --with-ensurepip=install
+make -j 8
+```
+now install! **altinstall** will not override system's python
+```
+sudo make altinstall
+```
 
 
 
