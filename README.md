@@ -121,6 +121,8 @@ sudo apt-get install vim vim-gtk
 ```
 open vim with `vim` and type `:echo has('clipboard')` which should return 1 (if not, vim-gtk install was not successful).
 
+To be able to install `Plugin` apps, install [Vundle](https://github.com/VundleVim/Vundle.vim)
+
 ## Git setup and [ssh-agent](https://www.root.cz/man/1/ssh-agent/) 
 The agent s used for authentication when logging in to other machines using [ssh](https://www.root.cz/man/1/ssh/). To automatize process of `git push origin master` [generate ssh keys](https://www.root.cz/man/1/ssh-agent/)
 ```
