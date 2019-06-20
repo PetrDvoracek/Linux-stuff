@@ -180,6 +180,20 @@ now install! **altinstall** will not override system's python
 ```
 sudo make altinstall
 ```
+# Python apt-get and specific version
+
+```
+sudo apt-get install software-properties-common #for newest debian/ubuntu
+sudo apt-get install python-software-properties # for debian < 8 ubuntu < 14
+```
+this will add add-apt-repository functionality to debian
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.7
+```
+
+
 
 
 
