@@ -1,7 +1,7 @@
 set nocompatible              " required
 filetype off                  " required
 set encoding=utf-8
-
+set fileencoding=utf-8  " The encoding written to file.
 "Enable folding
 set foldmethod=indent
 set foldlevel=99

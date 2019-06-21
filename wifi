@@ -1,0 +1,8 @@
+#show available networks
+nmcli dev wifi 
+
+#check what is enabled/disabled
+nmcli radio
+
+#connect
+nmcli device wifi connect SSID-Name password wireless-password

@@ -11,6 +11,9 @@
 
 set $mod Mod1
 
+#sound
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
 # ugly
 #exec --no-startup-id gnome-settings-daemon
 
