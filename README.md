@@ -193,6 +193,17 @@ sudo apt-get update
 sudo apt-get install python3.7
 ```
 
+## Python for Linux Mint
+
+[source](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/)
+
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7
+```
+
 
 
 
