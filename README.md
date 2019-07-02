@@ -123,6 +123,8 @@ open vim with `vim` and type `:echo has('clipboard')` which should return 1 (if 
 
 To be able to install `Plugin` apps, install [Vundle](https://github.com/VundleVim/Vundle.vim)
 
+If you have problem with fonts in [powerline](https://github.com/powerline/powerline), check [fontconfig](https://powerline.readthedocs.io/en/latest/installation/linux.html)
+
 ## Git setup and [ssh-agent](https://www.root.cz/man/1/ssh-agent/) 
 The agent s used for authentication when logging in to other machines using [ssh](https://www.root.cz/man/1/ssh/). To automatize process of `git push origin master` [generate ssh keys](https://www.root.cz/man/1/ssh-agent/)
 ```
