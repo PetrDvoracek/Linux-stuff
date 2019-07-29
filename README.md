@@ -134,9 +134,13 @@ start the ssh-agent in the background
 ```
 eval "$(ssh-agent -s)"
 ```
-and add created ssh to the agent
+and create `~/.ssh/config` file with following
 ```
-ssh-add ~/.ssh/id_rsa
+Host <host url (after @ to .com)>
+  HostName <host url (after @ to .com)>
+  User <before @>
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/<your private key (id_rsa)
 ```
 now [add the SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) (Settings->SSH and GPG keys).
 
